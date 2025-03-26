@@ -17,10 +17,10 @@
   color: var(--text-color);
   font-family: var(--font-main);
   font-variation-settings: "wght" var(--font-weight-main);
-  background-color: var(---page-background-color);
-  background-image: var(--bg-gradient);
   background-size: cover;
   background-attachment: fixed;
+  background-color: var(---page-background-color);
+  background-image: var(--bg-gradient);
 }
 
 .header {
@@ -34,9 +34,9 @@
 
 .post {
   max-inline-size: 700px;
+  border: 2px solid var(--text-color);
   margin: auto;
   background-color: var(--page-background-color);
-  border: 2px solid var(--text-color);
 }
 
 .header__card {
@@ -45,8 +45,8 @@
 
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  text-decoration: none;
   margin-block-start: clamp(8rem, 6.1479rem + 1.3023vw, 7.5rem);
+  text-decoration: none;
   margin-block-end: 20px;
 }
 
@@ -57,25 +57,25 @@
 
 .cards {
   display: flex;
-  justify-items: center;
   flex-direction: column;
   gap: 50px;
+  justify-items: center;
   padding-block-end: 103px;
 }
 
 .card__title {
   font-size: 18px;
   font-variation-settings: "wght" var(--font-weight-title);
+  border-block-end: 2px solid var(--text-color);
   padding-block-end: 4px;
   padding-inline-start: 10px;
   padding-block-start: 4px;
-  border-block-end: 2px solid var(--text-color);
 }
 
 .card__image {
   position: relative;
-  inline-size: 100%;
   display: block;
+  inline-size: 100%;
   aspect-ratio: 1 / 1;
   margin: 0;
   object-position: center;
@@ -112,8 +112,8 @@
 }
 
 .card__description {
-  font-size: 18px;
   font-family: var(--font-main);
+  font-size: 18px;
   line-height: 21px;
   margin-inline-start: 25px;
   margin-block-start: 26px;
@@ -125,15 +125,15 @@
   justify-content: end;
   margin-inline-end: 25px;
   margin-block-start: 21px;
-  align-items: center;
   margin-block-end: 20px;
+  align-items: center;
 }
 
 .button-save {
-  border: 2px solid var(--text-color);
-  background: var(--page-background-color);
   position: relative;
   z-index: 1;
+  border: 2px solid var(--text-color);
+  background: var(--page-background-color);
   overflow: hidden;
   cursor: pointer;
 }
@@ -141,8 +141,8 @@
 .card__like-button {
   min-inline-size: 130px;
   max-inline-size: 200px;
-  padding-inline: 17px;
   block-size: 38px;
+  padding-inline: 17px;
 }
 
 .button-save:focus {
@@ -183,11 +183,11 @@
 
 .card__icon-button {
   padding: 0;
+  position: relative;
   margin-block-start: 8px;
   background-color: var(--page-background-color);
   cursor: pointer;
   border: none;
-  position: relative;
   margin-inline-end: 6px;
 }
 
@@ -200,8 +200,8 @@
 }
 
 .button {
-  padding: 20px;
   display: flex;
+  padding: 20px;
   gap: 8px;
   align-items: center;
   padding-block: 15px;
@@ -214,18 +214,18 @@
 }
 
 .modal {
-  border: 2px solid var(--text-color);
-  padding: 0;
   min-height: 191px;
   max-inline-size: 353px;
+  border: 2px solid var(--text-color);
+  padding: 0;
   background-color: var(--page-background-color);
 }
 
 .modal__content {
   display: grid;
   grid-template-columns: 1fr auto;
-  padding: 28px;
   gap: 20px;
+  padding: 28px;
 }
 
 .dialog__floppy {
@@ -241,16 +241,16 @@
 }
 
 .button_close {
+  align-items: center;
   border: 2px solid var(--text-color);
+  font-family: var(--font-accent);
+  text-transform: uppercase;
+  cursor: pointer;
   block-size: 38px;
   margin-block-start: 2px;
   margin-inline-start: 27px;
   padding-inline-start: 129px;
   padding-inline-end: 128px;
-  align-items: center;
-  font-family: var(--font-accent);
-  text-transform: uppercase;
-  cursor: pointer;
 }
 
 .modal::backdrop {
